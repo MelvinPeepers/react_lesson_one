@@ -30,9 +30,9 @@ export default function App() {
 const [site, setSite] = useState("");
 
 async function getSite() {
-  const res = await fetch('https://api.adviceslip.com/advice');
+  const res = await fetch('https://api.netlify.com/api/v1/sites/fea2e189-225d-4d95-928b-1f21f3c8b8b9');
   const data = await res.json()
-  // console.log(data.slip.advice);
+  console.log(data);
   setSite(data);
 }
 // state is the most fundamental conscept of React
